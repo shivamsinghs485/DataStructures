@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/DS_Preparations/pom.xml" />
         <option value="$PROJECT_DIR$/java_ds/pom.xml" />
+        <option value="$PROJECT_DIR$/LeetCode/pom.xml" />
       </list>
     </option>
   </component>

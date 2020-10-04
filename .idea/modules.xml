@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DS_Preparations/DS_Preparations.iml" filepath="$PROJECT_DIR$/DS_Preparations/DS_Preparations.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/DataStructures.iml" filepath="$PROJECT_DIR$/.idea/DataStructures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LeetCode/LeetCode.iml" filepath="$PROJECT_DIR$/LeetCode/LeetCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/java_ds/java_ds.iml" filepath="$PROJECT_DIR$/java_ds/java_ds.iml" />
     </modules>
   </component>

@@ -7,12 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="java_ds" />
+        <module name="LeetCode" />
         <module name="DS_Preparations" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="DS_Preparations" target="1.5" />
       <module name="java_ds" target="1.5" />
+      <module name="LeetCode" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
