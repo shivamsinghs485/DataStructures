@@ -15,6 +15,7 @@ object insertatnylocation extends App {
 				b(i)=a(i-1)
 		}*/
 	println()
+	
 //	var b : ArrayBuffer[Int] = new ArrayBuffer[Int]
 //	for(i <- 0 to insertat-1 )
 //		{
