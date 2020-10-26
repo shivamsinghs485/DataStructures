@@ -12,6 +12,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="DS" target="1.5" />
       <module name="DS_Preparations" target="1.5" />
       <module name="java_ds" target="1.5" />
       <module name="LeetCode" target="1.5" />

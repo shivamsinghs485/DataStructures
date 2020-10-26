@@ -70,7 +70,8 @@ object array extends App {
 			for (i <- 9 to 0 by -1) {
 				if (arr(i) > x )
 					arr(i + 1) = arr(i)
-				else{
+				else
+				{
 					arr(i + 1) = x
 					return arr
 				}
@@ -136,7 +137,7 @@ object array extends App {
 					}
 				return arr3
 		}
-	intersection(Array(3,5,8,13,15),Array(1,2,3,15)).foreach(println)
+//	intersection(Array(3,5,8,13,15),Array(1,2,3,15)).foreach(println)
 	def intersection(arr1 : Array[Int] , arr2: Array[Int]) : Array[Int]	 =	{
 		var arr3 : Array[Int]=new Array(arr1.length+arr2.length)
 		var i=0
@@ -174,6 +175,70 @@ object array extends App {
 		}*/
 		return arr3
 	}
+//	smissing(Array(2,5,6,7,9,11,13,15),1,20)
+	def smissing(arr : Array[Int],l:Int,h:Int): Unit =
+	{
+		var i=1
+		var j=0
+		while(j<arr.length)
+			{
+				if(arr(j)!=i)
+					{
+						println("missing"+i)
+						i+=1
+					}
+				else
+					{
+						i+=1
+						j+=1
+					}
+			}
+		while(i<=h)
+			{
+				println("missing"+i)
+				i+=1
+			}
+		}
+//	duplicatesorted(Array(3,6,8,8,10,12,15,15,15,20))
+	def duplicatesorted(arr:Array[Int]): Unit =
+	{
+	var i=0
+		var dup=0
+		var j=1
+		while(i<arr.length-1) {
+			while (arr(i) == arr(i + 1))
+		  {
+			  j+=1
+			  i+=1
+		  }
+			if(j>1)
+			println("occurance of"+arr(i)+" is "+j+"times")
+				i+=1
+			j=1
+			}
+		println(dup)
+	}
+	duplicateunsortred(Array(5,5,1,2,7,9,7,7,2,2,2))
+	def duplicateunsortred(arr : Array[Int]): Unit =
+	{
+		var checklist : Map[Int , Int] =Map()
+		
+		for(i <- 0 to arr.length-1)
+		{
+			if( checklist.keys.toList.contains(arr(i)))
+			{
+				//checklist(a(i))=2
+				checklist += (arr(i)-> (checklist(arr(i))+1))
+			}
+			else checklist += (arr(i) -> 1)
+		}
+		//	println(checklist.filter(item => item._2 == checklist.maxBy(_._2)._2))
+		checklist.withFilter(_._2>1).foreach(println)
+		println(checklist)
+		println(checklist.maxBy(_._2)._1)
+		
+	}
+	
 	
 }
 
