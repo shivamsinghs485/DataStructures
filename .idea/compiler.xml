@@ -6,7 +6,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="DS" />
         <module name="java_ds" />
         <module name="LeetCode" />
         <module name="DS_Preparations" />
